@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    /*width: 1920px;*/
+    /*height: 1080px;*/
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background: #eee;
+    font-family: '微软雅黑';
+
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background: url('../images/bg1.jpg') no-repeat 50% 50%;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    line-height: 50px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+}
+nav ul li a{
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+
+}
+
+.active {
+    border-bottom: 3px solid #005580;
+    color: pink;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 8px 8px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    main {
+        padding: 10px 20px;
+    }
+}
+
+.main {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg4.jpg') no-repeat;
+    padding-bottom: 300px;
+}
+
+footer{
+    height: 50px;
+    display: block;
+}
+form p{
+    text-align: right;
+}
+.main_context{
+    margin-left: 500px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.content {
+    width:90%;
+    height: 250px;
+    background: transparent;
+    margin-top: 40px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color:#fff;
+}
+.content:first-child{
+    margin-top: 10px;
+}
+
+.page {
+    /*width: 700px;*/
+    width: 90%;
+    height: 50px;
+    margin-top: 40px;
+    background: white;
+}
+
+.page span {
+    display: inline-block;
+}
+
+.page span:first-child {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.page span:nth-child(2) {
+    margin-left: 250px;
+    /*width: 100px;*/
+}
+
+.page span:nth-child(3) {
+    margin-left: 210px;
+}
+
+.content h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+.content div {
+    /*width: 400px;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content div span:nth-child(even) {
+    color: #286090
+}
+
+.content p {
+    margin: 20px 0 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content button {
+    width: 130px;
+    height: 35px;
+    margin: 40px 0 0 40px;
+    background: orange;
+    outline: none;
+    border: 1px solid orange;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.content button a{
+    text-decoration: none;
+    color:#fff;
+}
+.userinfo {
+    position: absolute;
+    width: 450px;
+    height: 220px;
+    border:1px solid #fff;
+    left:10px;
+    top: 10px;
+}
+
+.login {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    border:1px solid #fff;
+    left:10px;
+    top: 10px;
+}
+
+.register {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    left: 10px;
+    border:1px solid #fff;
+    top: 10px;
+    display: none;
+}
+
+.community {
+    position: absolute;
+    width: 450px;
+    height: 220px;
+    left: 10px;
+    top: 340px;
+    border:1px solid #fff;
+}
+
+.title {
+    position: relative;
+    /*margin: 50px 100px 100px ;*/
+    top: 10px;
+    left: 30px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid orange;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /*padding: 20px*/
+}
+
+.userinfo p {
+    margin-left: 30px;
+}
+
+.userinfo p:nth-child(2) {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.userinfo span:nth-child(3) {
+    margin-left: 30px;
+    /*color: orange;*/
+    color:red;
+}
+
+.user {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.user input {
+    height: 30px;
+    width: 230px;
+    padding: 0 5px;
+
+}
+
+.password {
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.password input {
+    height: 30px;
+    width: 230px;
+    padding: 0 5px;
+
+}
+
+.login button, .register button {
+    width: 230px;
+    height: 35px;
+    margin: 25px 90px 0px 90px;
+    background: orange;
+    outline: none;
+    border: 1px solid orange;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.login div:nth-child(5) {
+    margin: 20px 50px 0 230px;
+}
+
+.register div:nth-child(6) {
+    /*width:20px;*/
+    margin: 20px 28px 0 30px;
+    /*background: red;*/
+    display: inline-block;
+    color: orange;
+}
+
+.register div:nth-child(7) {
+    margin: 0 20px 0 0px;
+    width: 220px;
+    display: inline-block;
+
+}
+
+/*.register button{
+	width: 230px;
+	height: 35px;
+	margin: 25px 90px 0px 90px;
+	background: orange;
+	outline: none;
+	border: 1px solid orange;
+	border-radius: 3px;
+	color: white;
+	letter-spacing: 3px;
+	cursor: pointer;
+}*/
+
+.community p {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.comment {
+    /*width: 700px;*/
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    background: white;
+}
+
+.number {
+    position: relative;
+    height: 50px;
+    top: 20px;
+    left: 40px;
+}
+
+.number span:nth-child(2) {
+    position: relative;
+    left: 460px;
+    letter-spacing: 2px;
+}
+
+.comment textarea {
+    position: relative;
+    left: 40px;
+    height: 60px;
+    width: 550px;
+    border: solid 1px #0e90d2;
+}
+
+.comment button {
+    position: relative;
+    top: -6px;
+    left: 35px;
+    height: 67px;
+    width: 60px;
+    background: #0e90d2;
+    border: solid 1px #0e90d2;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.comment .warning {
+    position: relative;
+    left: 40px;
+    width: 615px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #da4f49;
+    color: white;
+
+}
+
+.liuyan {
+    position: relative;
+    left: 40px;
+    padding-bottom: 30px;
+}
+
+.liuyan span:nth-child(2) {
+    position: relative;
+    left: 400px;
+}

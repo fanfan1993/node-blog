@@ -1,0 +1,49 @@
+{%extends 'layout.html'%}
+
+{% block content%}
+<div class="main_context">
+    {% for item in contents%}
+    <div class="content">
+        <h2>{{item.title}}</h2>
+        <div>
+            <span>作者:</span>
+            <span>{{item.user.username}}</span>
+            <span>时间:</span>
+            <span>{{item.time|date('Y年m月d日 H:i:s', -8*60)}}</span>
+            <span>阅读:</span>
+            <span>{{item.view}}</span>
+            <span>评论:</span>
+            <span>{{item.comments.length}}</span>
+        </div>
+        <p>{{item.description}}</p>
+        <button><a href="/view/?content={{item._id.toString()}}">阅读全文</a></button>
+    </div>
+    {% endfor%}
+
+    <div class="page">
+        {%if page<=1 %}
+        <span>没有上一页</span>
+        {%else%}
+        <span>
+            <a href="/?category={{category}}&page={{page-1}}" style="text-decoration: none;color: black">上一页</a>
+        </span>
+        {%endif%}
+
+        <span>
+            {%if pages>0 %}
+              {{page}}/{{pages}}
+            {%else%}
+            {%endif%}
+        </span>
+
+        {%if page>=pages %}
+        <span>没有下一页</span>
+        {%else%}
+        <span>
+            <a href="/?category={{category}}&page={{page+1}}" style="text-decoration: none;color:black">下一页</a>
+        </span>
+        {%endif%}
+    </div>
+    {% endblock %}
+</div>
+
